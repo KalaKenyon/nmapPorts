@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Add the IP address that you want to scan
+target_ip="xxx.xxx.xxx.xxx"
+
+# Add the ports you want scanned
+ports="22,80,139,443"
+
+# Run Nmap scan with your specified options
+nmap -T4 -p$ports -A $target_ip
+
+# End of script
